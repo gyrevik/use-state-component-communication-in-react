@@ -11,6 +11,8 @@ export function NewEmployee() {
 
   function changeEmployeeInfo(e) {
     console.log(e);
+    console.log('target name:', e.target.name)
+    console.log('target value:', e.target.value)
 
     setEmployeeData({ ...employee, [e.target.name]: e.target.value });
   }
